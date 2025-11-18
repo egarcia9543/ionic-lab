@@ -3,8 +3,8 @@ import { AdministrarServiciosComponent } from './pages/administrar-servicios/adm
 import { BienvenidaComponent } from './pages/bienvenida/bienvenida.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { DetalleServicioComponent } from './pages/detalle-servicio/detalle-servicio.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegistroComponent } from './pages/registro/registro.component';
+import { LoginPage } from './pages/login/login.page';
+import { RegistroPage } from './pages/registro/registro.page';
 
 export const routes: Routes = [
   {
@@ -13,11 +13,11 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginPage
   },
   {
     path: 'registro',
-    component: RegistroComponent
+    component: RegistroPage
   },
   {
     path: 'servicios',
