@@ -5,6 +5,7 @@ import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { DetalleServicioComponent } from './pages/detalle-servicio/detalle-servicio.component';
 import { LoginPage } from './pages/login/login.page';
 import { RegistroPage } from './pages/registro/registro.page';
+import { DetallePedidosComponent } from './pages/detalle-pedidos/detalle-pedidos.component'
 
 export const routes: Routes = [
   {
@@ -34,5 +35,9 @@ export const routes: Routes = [
   {
     path: '**',
     redirectTo: ''
+  },
+  {
+    path: 'detalle-pedidos',
+    component: DetallePedidosComponent
   }
 ];
