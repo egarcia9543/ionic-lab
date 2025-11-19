@@ -33,11 +33,11 @@ export const routes: Routes = [
     component: AdministrarServiciosComponent
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: 'pedidos',
+    component: DetallePedidosComponent
   },
   {
-    path: 'detalle-pedidos',
-    component: DetallePedidosComponent
+    path: '**',
+    redirectTo: ''
   }
 ];
