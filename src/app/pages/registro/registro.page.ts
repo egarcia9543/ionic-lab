@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { IonContent } from "@ionic/angular/standalone";
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { IonContent, IonItem, IonInput, IonButton } from '@ionic/angular/standalone';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -11,16 +11,18 @@ import { IonicModule } from '@ionic/angular';
   styleUrls: ['./registro.page.scss'],
   standalone: true,
   imports: [
-    IonContent,
-    ReactiveFormsModule,
     CommonModule,
-    IonicModule
+    ReactiveFormsModule,
+    IonContent,
+    IonItem,
+    IonInput,
+    IonButton
   ]
 })
 export class RegistroPage implements OnInit {
 
   registroForm!: FormGroup;
-
+  private router = inject(Router);
   constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
@@ -33,6 +35,7 @@ export class RegistroPage implements OnInit {
   }
 
   onRegister() {
+    this.router.navigate(['/servicios']);
     if (this.registroForm.valid) {
       console.log('Datos enviados:', this.registroForm.value);
     }

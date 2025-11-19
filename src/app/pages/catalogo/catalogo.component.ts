@@ -20,7 +20,7 @@ interface Service {
   selector: 'app-catalogo',
   templateUrl: './catalogo.component.html',
   styleUrls: ['./catalogo.component.scss'],
-  imports: [HeaderComponent, BreadcrumbComponent, SearchbarComponent, ServicesCardComponent, FloatingButtonComponent, FooterComponent],
+  imports: [HeaderComponent, BreadcrumbComponent, SearchbarComponent, ServicesCardComponent, FloatingButtonComponent],
 })
 export class CatalogoComponent implements OnInit {
   private servicesData = inject(GetServices);

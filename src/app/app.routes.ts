@@ -30,5 +30,9 @@ export const routes: Routes = [
   {
     path: 'administrar',
     component: AdministrarServiciosComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];

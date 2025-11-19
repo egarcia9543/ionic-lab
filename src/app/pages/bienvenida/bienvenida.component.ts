@@ -13,7 +13,7 @@ export class BienvenidaComponent {
   constructor(private router: Router) {}
 
   irCatalogo() {
-    this.router.navigate(['/servicios']);
+    this.router.navigate(['/login']);
   }
 
 }
