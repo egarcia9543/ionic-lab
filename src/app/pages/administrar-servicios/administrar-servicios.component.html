@@ -1,4 +1,4 @@
-<body>
+
 <title>Detalle de Solicitud | Easy Cleaning</title>
   <header>
     <h1>Detalle de solicitud</h1>
@@ -13,14 +13,14 @@
     </div>
 
     <div class="detail-card">
-      <h2>Información del servicio</h2>
+      <h2>Detalle del servicio</h2>
       <div class="detail-item">
         <strong>Nombre del cliente:</strong>
-        <span>Laura Gómez</span>
+        <span>{{ pedido.nombre }}</span>
       </div>
       <div class="detail-item">
         <strong>Servicio solicitado:</strong>
-        <span>Limpieza de alfombras</span>
+        <span>{{ pedido.servicio }}</span>
       </div>
       <div class="detail-item">
         <strong>Fecha del servicio:</strong>
@@ -43,17 +43,15 @@
         <span>Transferencia bancaria</span>
       </div>
 
-      <a href="#" class="btn-back">Volver</a>
+      <a routerLink="/pedidos" class="btn-back">Volver</a>
     </div>
   </div>
 
   <nav class="bottom-nav">
-    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828765.png" alt=""><span>Solicitudes</span></a>
-    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt=""><span>Mensajes</span></a>
-    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3063/3063826.png" alt=""><span>Productos</span></a>
+    <a routerLink="/administrar"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828765.png" alt=""><span>Solicitudes</span></a>
+    <a routerLink="/servicios"><img src="https://cdn-icons-png.flaticon.com/512/3063/3063826.png" alt=""><span>Productos</span></a>
     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt=""><span>Salir</span></a>
   </nav>
 
-</body>
 
 

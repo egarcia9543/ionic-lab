@@ -37,6 +37,10 @@ export const routes: Routes = [
     component: DetallePedidosComponent
   },
   {
+    path: 'pedidos/detalle/:id',
+    component: AdministrarServiciosComponent
+  },
+  {
     path: '**',
     redirectTo: ''
   }
